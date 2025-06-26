@@ -9,6 +9,9 @@ public class Lec2Patterns {
     public static void main(String[] args){
         Lec2Patterns lec2Patterns = new Lec2Patterns();
         lec2Patterns.SquarePattern(5);
+        System.out.println();
+        System.out.println();
+        lec2Patterns.pattern2(5);
 
     }
 
@@ -26,7 +29,7 @@ public class Lec2Patterns {
        //int n is no of rows
         for(int i = 0 ; i< n ; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print("*");
+                System.out.print(" * ");
             }
             if (i < n - 1) {
                 System.out.println();
@@ -34,4 +37,24 @@ public class Lec2Patterns {
         }
     }
 
+
+    /*
+
+     *
+     * *
+     * * *
+     * * * *
+     * * * * *
+     * * * * * *
+
+     */
+
+    private void pattern2(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
 }
