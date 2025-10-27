@@ -1,18 +1,16 @@
-package dsa.neetcode.neetcode150;
+package dsa.neetcode.neetcode150.arraysAndHashing;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
-public class NeetCode1 {
+public class TwoSum {
 
     public static void main(String[] args){
 
        int[] nums={3,4,5,6};
        int target = 7;
 
-       NeetCode1 neetCode1 = new NeetCode1();
+       TwoSum neetCode1 = new TwoSum();
        neetCode1.twoSum(nums,target);
 
     }
